@@ -1,17 +1,33 @@
 ﻿@page "/benzindata"
 @rendermode InteractiveServer
 
+
 <PageTitle>Benzin Data</PageTitle>
 
 <h1>Benzin Data</h1>
 
 
-<button @onclick="FetchData">Click me to show data</button>
+<button @onclick="FetchData">Klik for at hente data</button>
 
-@if (data != null)
+@if (benzinPriser != null && benzinPriser.Any())
 {
-    <h3>Price @data.Price</h3>
-    <h3>Date: @data.Date</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Dato</th>
+                <th>Pris pr. liter</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var pris in benzinPriser)
+            {
+                <tr>
+                    <td>@pris.Date</td>
+                    <td>@pris.Price</td>
+                </tr>
+            }
+        </tbody>
+    </table>
 }
 
 
@@ -19,17 +35,20 @@
 
 @code {
 
-    public Data data;
-
-    public HttpClient httpClient = new HttpClient();
+    private List<BenzinPrisData> benzinPriser;
 
     private async Task FetchData()
     {
-        data = await httpClient.GetFromJsonAsync<Data>("https://magsapi.onrender.com/api/miles95");
+        using var client = new HttpClient();
+        var response = await client.GetAsync("https://magsapi.onrender.com/api/miles95");
+        if (response.IsSuccessStatusCode)
+        {
+            var jsonString = await response.Content.ReadAsStringAsync();
+            benzinPriser = System.Text.Json.JsonSerializer.Deserialize<List<BenzinPrisData>>(jsonString);
+        }
     }
 
-
-    public class Data
+    public class BenzinPrisData
     {
   
         public string Price { get; set; }
