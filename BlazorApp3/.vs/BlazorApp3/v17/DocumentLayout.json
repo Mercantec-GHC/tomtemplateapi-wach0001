@@ -1,7 +1,24 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\admin\\source\\repos\\BlazorApp3\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\admin\\Documents\\GitHub\\tomtemplateapi-wach0001\\BlazorApp3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2B58C682-B902-4E85-B4E1-655D9E0AE808}|BlazorApp3\\BlazorApp3.csproj|c:\\users\\admin\\documents\\github\\tomtemplateapi-wach0001\\blazorapp3\\blazorapp3\\components\\pages\\benzindata.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2B58C682-B902-4E85-B4E1-655D9E0AE808}|BlazorApp3\\BlazorApp3.csproj|solutionrelative:blazorapp3\\components\\pages\\benzindata.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B58C682-B902-4E85-B4E1-655D9E0AE808}|BlazorApp3\\BlazorApp3.csproj|c:\\users\\admin\\documents\\github\\tomtemplateapi-wach0001\\blazorapp3\\blazorapp3\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2B58C682-B902-4E85-B4E1-655D9E0AE808}|BlazorApp3\\BlazorApp3.csproj|solutionrelative:blazorapp3\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B58C682-B902-4E85-B4E1-655D9E0AE808}|BlazorApp3\\BlazorApp3.csproj|c:\\users\\admin\\documents\\github\\tomtemplateapi-wach0001\\blazorapp3\\blazorapp3\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2B58C682-B902-4E85-B4E1-655D9E0AE808}|BlazorApp3\\BlazorApp3.csproj|solutionrelative:blazorapp3\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B58C682-B902-4E85-B4E1-655D9E0AE808}|BlazorApp3\\BlazorApp3.csproj|c:\\users\\admin\\documents\\github\\tomtemplateapi-wach0001\\blazorapp3\\blazorapp3\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2B58C682-B902-4E85-B4E1-655D9E0AE808}|BlazorApp3\\BlazorApp3.csproj|solutionrelative:blazorapp3\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -18,6 +35,55 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\tomtemplateapi-wach0001\\BlazorApp3\\BlazorApp3\\Components\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "BlazorApp3\\Components\\Layout\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\tomtemplateapi-wach0001\\BlazorApp3\\BlazorApp3\\Components\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "BlazorApp3\\Components\\Layout\\MainLayout.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-08T02:26:40.932Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\tomtemplateapi-wach0001\\BlazorApp3\\BlazorApp3\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "BlazorApp3\\Components\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\tomtemplateapi-wach0001\\BlazorApp3\\BlazorApp3\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "BlazorApp3\\Components\\Layout\\NavMenu.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-08T02:26:21.095Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BenzinData.razor",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\tomtemplateapi-wach0001\\BlazorApp3\\BlazorApp3\\Components\\Pages\\BenzinData.razor",
+              "RelativeDocumentMoniker": "BlazorApp3\\Components\\Pages\\BenzinData.razor",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\tomtemplateapi-wach0001\\BlazorApp3\\BlazorApp3\\Components\\Pages\\BenzinData.razor",
+              "RelativeToolTip": "BlazorApp3\\Components\\Pages\\BenzinData.razor",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAACcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-07T07:31:10.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\tomtemplateapi-wach0001\\BlazorApp3\\BlazorApp3\\Components\\_Imports.razor",
+              "RelativeDocumentMoniker": "BlazorApp3\\Components\\_Imports.razor",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\tomtemplateapi-wach0001\\BlazorApp3\\BlazorApp3\\Components\\_Imports.razor",
+              "RelativeToolTip": "BlazorApp3\\Components\\_Imports.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-08T02:29:40.979Z"
             }
           ]
         }

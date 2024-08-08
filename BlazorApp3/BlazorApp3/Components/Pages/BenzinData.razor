@@ -1,0 +1,39 @@
+﻿@page "/benzindata"
+@rendermode InteractiveServer
+
+<PageTitle>Benzin Data</PageTitle>
+
+<h1>Benzin Data</h1>
+
+
+<button @onclick="FetchData">Click me to show data</button>
+
+@if (data != null)
+{
+    <h3>Price @data.Price</h3>
+    <h3>Date: @data.Date</h3>
+}
+
+
+
+
+@code {
+
+    public Data data;
+
+    public HttpClient httpClient = new HttpClient();
+
+    private async Task FetchData()
+    {
+        data = await httpClient.GetFromJsonAsync<Data>("https://magsapi.onrender.com/api/miles95");
+    }
+
+
+    public class Data
+    {
+  
+        public string Price { get; set; }
+        public string Date { get; set; }
+    }
+    
+}

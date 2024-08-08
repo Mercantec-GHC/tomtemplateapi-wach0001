@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\admin\\source\\repos\\BlazorApp3\\BlazorApp3\\BlazorApp3.csproj": {}
+    "C:\\Users\\admin\\Documents\\GitHub\\tomtemplateapi-wach0001\\BlazorApp3\\BlazorApp3\\BlazorApp3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\admin\\source\\repos\\BlazorApp3\\BlazorApp3\\BlazorApp3.csproj": {
+    "C:\\Users\\admin\\Documents\\GitHub\\tomtemplateapi-wach0001\\BlazorApp3\\BlazorApp3\\BlazorApp3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\admin\\source\\repos\\BlazorApp3\\BlazorApp3\\BlazorApp3.csproj",
+        "projectUniqueName": "C:\\Users\\admin\\Documents\\GitHub\\tomtemplateapi-wach0001\\BlazorApp3\\BlazorApp3\\BlazorApp3.csproj",
         "projectName": "BlazorApp3",
-        "projectPath": "C:\\Users\\admin\\source\\repos\\BlazorApp3\\BlazorApp3\\BlazorApp3.csproj",
+        "projectPath": "C:\\Users\\admin\\Documents\\GitHub\\tomtemplateapi-wach0001\\BlazorApp3\\BlazorApp3\\BlazorApp3.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\admin\\source\\repos\\BlazorApp3\\BlazorApp3\\obj\\",
+        "outputPath": "C:\\Users\\admin\\Documents\\GitHub\\tomtemplateapi-wach0001\\BlazorApp3\\BlazorApp3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
