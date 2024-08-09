@@ -1,7 +1,56 @@
 ﻿@page "/"
+@rendermode InteractiveServer
+@using System.Globalization
+@using ApexCharts
 
-<PageTitle>Home</PageTitle>
 
-<h1>Hello, world!</h1>
+<PageTitle>Benzin Data</PageTitle>
 
-Welcome to your new app.
+<h1>Benzin Data</h1>
+
+<button @onclick="FetchData">Klik for at hente data</button>
+
+@if (benzinPriser != null && benzinPriser.Any())
+{
+    <ApexChart TItem="BenzinPrisData"
+               Title="Benzinpriser"
+               XAxisType="XAxisType.Datetime"
+               Options="chartOptions">
+
+        <ApexPointSeries TItem="BenzinPrisData"
+                         Items="benzinPriser"
+                         Name="Pris pr. liter"
+                         SeriesType="SeriesType.Line"
+                         XValue="e => e.Date"
+                         YValue="e => decimal.Parse(e.Price, CultureInfo.InvariantCulture)" />
+    </ApexChart>
+}
+
+
+
+
+@code {
+
+    private List<BenzinPrisData> benzinPriser;
+
+    private async Task FetchData()
+    {
+        using var client = new HttpClient();
+        var response = await client.GetAsync("https://magsapi.onrender.com/api/miles95");
+        if (response.IsSuccessStatusCode)
+        {
+            var jsonString = await response.Content.ReadAsStringAsync();
+            benzinPriser = System.Text.Json.JsonSerializer.Deserialize<List<BenzinPrisData>>(jsonString);
+        }
+    }
+
+    public class BenzinPrisData
+    {
+
+        public string Price { get; set; }
+        public string Date { get; set; }
+    }
+    private ApexChartOptions<BenzinPrisData> chartOptions = new ApexChartOptions<BenzinPrisData>();
+
+   
+}

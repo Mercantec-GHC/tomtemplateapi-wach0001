@@ -19,11 +19,11 @@
             </tr>
         </thead>
         <tbody>
-            @foreach (var pris in benzinPriser)
+            @foreach (var data in benzinPriser)
             {
                 <tr>
-                    <td>@pris.Date</td>
-                    <td>@pris.Price</td>
+                    <td>@data.Date</td>
+                    <td>@data.Price</td>
                 </tr>
             }
         </tbody>
